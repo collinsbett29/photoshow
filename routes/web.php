@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'AlbumsController@index');
+Route::get('/', 'App\Http\Controllers\AlbumsController@index');
 
-Route::get('/albums', 'AlbumsController@index');
+Route::get('/albums', 'App\Http\Controllers\AlbumsController@index');
 
-Route::get('/albums/create', 'AlbumsController@create');
+Route::get('/albums/create', 'App\Http\Controllers\AlbumsController@create');
 
-Route::get('/albums/store', 'AlbumsController@store');
+Route::post('/albums/store', 'App\Http\Controllers\AlbumsController@store')->name('album-store');
 
 
 
