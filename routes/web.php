@@ -17,7 +17,7 @@ Route::get('/', 'App\Http\Controllers\AlbumsController@index');
 
 Route::get('/albums', 'App\Http\Controllers\AlbumsController@index');
 
-Route::get('/albums/create', 'App\Http\Controllers\AlbumsController@create');
+Route::get('/albums/create', 'App\Http\Controllers\AlbumsController@create')->name('album-create');
 
 Route::post('/albums/store', 'App\Http\Controllers\AlbumsController@store')->name('album-store');
 
