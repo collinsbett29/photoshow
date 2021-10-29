@@ -14,7 +14,10 @@ class CreateAlbumsTable extends Migration
     public function up()
     {
         Schema::create('albums', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->text('description');
+            $table->string('cover_image');
             $table->timestamps();
         });
     }
