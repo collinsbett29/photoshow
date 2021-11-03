@@ -10,7 +10,7 @@
                         <p class="card-text"><?php echo e($album->name); ?></p>
                             <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="<?php echo e(route('album-show', $album->id)); ?>" class="btn btn-sm btn-outline-secondary">View</a>
                                     </div>
                                 <small class="text-muted"><?php echo e($album->description); ?></small>
                             </div>

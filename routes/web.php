@@ -23,4 +23,6 @@ Route::post('/albums/store', 'App\Http\Controllers\AlbumsController@store')->nam
 
 Route::get('/albums/{id}', 'App\Http\Controllers\AlbumsController@show')->name('album-show');
 
+Route::get('/photos/create/{albumId}', 'App\Http\Controllers\PhotosController@create')->name('photo-create');
 
+Route::post('/photos/store', 'App\Http\Controllers\PhotosController@store')->name('photo-store');
