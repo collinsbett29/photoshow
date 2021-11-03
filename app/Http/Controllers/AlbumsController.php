@@ -4,11 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Album;
+// use App\Models\photo;
+
 
 class AlbumsController extends Controller
 {
     public function index(){
-        return view('albums.index');
+        $albums = Album::get();
+
+        return view('albums.index')->with('albums', $albums);
     }
     public function create(){
         return view('albums.create');
@@ -37,5 +41,10 @@ class AlbumsController extends Controller
         $album->save();
 
         return redirect('/albums')->with('success', 'Album created successfully!');
+    }
+    public function show($id){
+        $album = Album::with('photos');
+
+        return view('albums.show')->with('album', $album);
     }
 }
