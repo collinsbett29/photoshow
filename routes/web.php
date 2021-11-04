@@ -31,4 +31,4 @@ Route::post('/photos/store', 'App\Http\Controllers\PhotosController@store')->nam
 Route::get('/photos/{id}', 'App\Http\Controllers\PhotosController@show')->name('photo-show');
 
 
-Route::delete('/photos/{id}/delete', 'PhotosContoroller@destroy');
+Route::delete('/photos/{id}/delete', 'PhotosContoroller@destroy')->name('photo-destroy');

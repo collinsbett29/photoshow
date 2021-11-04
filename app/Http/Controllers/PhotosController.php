@@ -43,4 +43,9 @@ class PhotosController extends Controller
 
         return view('photos.show')->with('photo', $photo);
     }
+    public function delete($id) {
+        $photo = Photo::find($id);
+
+        return view('photos.show')->with('photo', $photo);
+    }
 }
