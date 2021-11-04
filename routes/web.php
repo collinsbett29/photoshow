@@ -29,3 +29,6 @@ Route::get('/photos/create/{albumId}', 'App\Http\Controllers\PhotosController@cr
 Route::post('/photos/store', 'App\Http\Controllers\PhotosController@store')->name('photo-store');
 
 Route::get('/photos/{id}', 'App\Http\Controllers\PhotosController@show')->name('photo-show');
+
+
+Route::delete('/photos/{id}/delete', 'PhotosContoroller@destroy');
