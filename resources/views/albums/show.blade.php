@@ -19,7 +19,7 @@
                         <div class="card shadow-sm">
                             <img src="{{ asset('storage/albums/'. $album->id) }}/{{ $photo->photo }}" alt="$photo->photo" height="200px">            
                             <div class="card-body">
-                            <p class="card-text">{{ $photo->description }}</p>
+                            <p class="card-text">{{ $photo->title }}</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
                                             <a href="{{ route('photo-show', $photo->id) }}" class="btn btn-sm btn-outline-secondary">View</a>

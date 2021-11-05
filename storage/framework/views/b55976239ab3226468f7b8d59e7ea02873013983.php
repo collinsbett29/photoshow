@@ -17,7 +17,7 @@
                         <div class="card shadow-sm">
                             <img src="<?php echo e(asset('storage/albums/'. $album->id)); ?>/<?php echo e($photo->photo); ?>" alt="$photo->photo" height="200px">            
                             <div class="card-body">
-                            <p class="card-text"><?php echo e($photo->description); ?></p>
+                            <p class="card-text"><?php echo e($photo->title); ?></p>
                                 <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
                                             <a href="<?php echo e(route('photo-show', $photo->id)); ?>" class="btn btn-sm btn-outline-secondary">View</a>
