@@ -11,7 +11,7 @@
         <br>
         <small>Size: <?php echo e($photo->size); ?></small>
         <hr>
-        <img src="<?php echo e(asset('storage/albums/'. $photo->album_id)); ?>/<?php echo e($photo->photo); ?>" alt="<?php echo e($photo->photo); ?>" height="200px">            
+        <img src="<?php echo e(asset('storage/albums/'. $photo->album_id)); ?>/<?php echo e($photo->photo); ?>" alt="<?php echo e($photo->photo); ?>" height="100px">            
         <hr>
     </div>
 <?php $__env->stopSection(); ?>
