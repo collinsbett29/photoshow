@@ -13,7 +13,7 @@
         <br>
         <small>Size: {{ $photo->size }}</small>
         <hr>
-        <img src="{{ asset('storage/albums/'. $photo->album_id) }}/{{ $photo->photo }}" alt="{{ $photo->photo }}" height="200px">            
+        <img src="{{ asset('storage/albums/'. $photo->album_id) }}/{{ $photo->photo }}" alt="{{ $photo->photo }}" height="100px">            
         <hr>
     </div>
 @endsection

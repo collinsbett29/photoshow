@@ -14,7 +14,7 @@
                                     </div>
                                 <small class="text-muted"><?php echo e($album->description); ?></small>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>    

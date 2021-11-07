@@ -7,7 +7,7 @@
             @foreach ($albums as $album)
                 <div class="col-md-4">
                     <div class="card shadow-sm">
-                        <img src="{{ asset('storage/album_covers/'. $album->cover_image) }}" alt="$album->cover_image" height="2000px">            
+                        <img src="{{ asset('storage/album_covers/'. $album->cover_image) }}" alt="$album->cover_image" height="200px">            
                         <div class="card-body">
                         <p class="card-text">{{ $album->name }}</p>
                             <div class="d-flex justify-content-between align-items-center">
